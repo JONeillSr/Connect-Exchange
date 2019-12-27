@@ -1,7 +1,7 @@
 function Connect-OnPremExchange {
     # https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps
     $E2K10Cred = Get-Credential
-    $E2K10Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://Regia.moldedfiberglass.com/PowerShell/ -Authentication Kerberos -Credential $E2K10Cred
+    $E2K10Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://blah.blahblahblah.com/PowerShell/ -Authentication Kerberos -Credential $E2K10Cred
     Import-PSSession $E2K10Session -DisableNameChecking
 
     # Remove-PSSession $E2K10Session
